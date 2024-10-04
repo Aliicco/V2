@@ -1,0 +1,171 @@
+/* تنسيق الجسم والنصوص */
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    background-color: #212121;
+    color: #fff;
+}
+
+/* تنسيق العنوان */
+.title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+    color: #303030;
+    text-align: center;
+}
+
+.static-text {
+    color: #ffffff; /* اللون الرمادي الثابت */
+}
+
+.color-changing-text {
+    font-size: 0.7em;
+    font-weight: bold;
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: #c8ff00; }
+    25% { color: #37ff00; }
+    50% { color: #00ccff; }
+    75% { color: #ee00ff; }
+    100% { color: #eeff00; }
+}
+
+/* تنسيق صندوق الإدخال والزر */
+.ai-container {
+    text-align: center;
+    margin: 1rem auto;
+    padding: 1rem 0.5rem;
+    display: flex; /* استخدام Flexbox لمحاذاة العناصر في صف */
+    justify-content: center; /* محاذاة العناصر في الوسط */
+    gap: 10px; /* المسافة بين العناصر */
+}
+
+#equation {
+    width: 400px; /* تعيين عرض ثابت لحقل الإدخال */
+    height: 150px; /* ارتفاع ثابت */
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1em;
+    box-sizing: border-box;
+    border: 2.5px solid #333333;
+    background-color: #333333;
+    color: #fafafa;
+    margin: 10px; /* إضافة مسافة حول حقل الإدخال */
+    text-align: center; /* محاذاة النص في الجهة الوسطى */
+}
+
+#result {
+    width: 400px; /* تعيين عرض ثابت لمربع الإخراج */
+    height: 150px; /* ارتفاع ثابت */
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1em;
+    box-sizing: border-box;
+    border: 2.5px solid #333333;
+    background-color: #333333;
+    color: #fafafa;
+    margin: 10px; /* إضافة مسافة حول مربع الإخراج */
+    text-align: center; /* محاذاة النص في الجهة اليمنى */
+  display: flex; /* استخدام flexbox */
+  align-items: center; /* محاذاة العناصر رأسياً */
+  justify-content: center; /* محاذاة العناصر أفقياً */
+}
+
+/* تنسيق الزر */
+.button-container {
+    text-align: center; /* محاذاة الزر في الوسط */
+    margin-top: 20px; /* إضافة مسافة فوق الزر */
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #212121;
+    border: 2px solid #333333;
+    color: black;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e6e6e6;
+}
+
+button i {
+    font-size: 1.2em;
+}
+
+/* تنسيق الهيدر */
+.site-header {
+    background: rgb(51, 51, 51, 0.7);
+    backdrop-filter: blur(4px);
+    color: #ffffff;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+body::before {
+    content: '';
+    display: block;
+    height: 80px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+#ali0 {
+    font-weight: bold;
+    animation: colorChange 5s infinite;
+}
+
+.title {
+    font-size: 130px;
+    color: #212121;
+}
+
+.head {
+    color: #ffffff;
+}
+
+.RGB {
+    font-size: 1.1em;
+    font-weight: bold;
+    animation: colorChange 5s infinite;
+}
